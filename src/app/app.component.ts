@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { ViewChild,ElementRef } from '@angular/core'
+import { ViewChild, ElementRef } from '@angular/core'
+import {Router} from '@angular/router';
 declare var FB: any;
 @Component({
   selector: 'app-root',
@@ -12,11 +13,14 @@ export class AppComponent {
   title = 'untitled';
   auth2: any;
   Name: any;
-  show: any;
+  show: boolean;
   toastr: any;
 
   // tslint:disable-next-line:use-lifecycle-interface
   ngOnInit() {
+
+
+    console.log(this.show);
     this.googleInitialize();
     (window as any).fbAsyncInit = function() {
       FB.init({
@@ -37,6 +41,10 @@ export class AppComponent {
     }(document, 'script', 'facebook-jssdk'));
 
   }
+  constructor(private route: Router){
+
+  }
+
 
   googleInitialize() {
     window['googleSDKLoaded'] = () => {
@@ -68,6 +76,7 @@ export class AppComponent {
         console.log('Token || ' + googleUser.getAuthResponse().id_token);
         this.show = true;
         this.Name = profile.getName();
+        console.log("show",this.show);
         console.log('Image URL: ' + profile.getImageUrl());
         console.log('Email: ' + profile.getEmail());
       }, (error) => {

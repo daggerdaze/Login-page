@@ -1,33 +1,28 @@
-
-
 <router-outlet></router-outlet>
-<form  method="post">
+<div class="container">
+<div class=" card bg-light">
+<form action="https://reqres.in">
 
-  <div class="container mt-5">
-
-
-
-
-
-    <div class="col-lg-6 ">
-
-<div>
-        <button class="login-Btn text-dark fab fa-facebook-square" #loginRef  m-b-2 (click)="submitLogin()">
+  <div class="card-body text-center " >
+    <div><h4 class="card-text ">SIGN UP</h4></div>
+  </div>
+  <div class="card-body text-center " >
+    <div><h1 class="card-text text-secondary">Create your account</h1></div>
+  </div>
+    <div class="card-body text-center">
+      <p class="card-text text-dark">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p></div>
+      <div class="container mt-2 d-flex justify-content-center card-body text-center " >
+        <button class=" text-secondary fab fa-facebook-square mr-5 pl-4 pr-4 pb-2 pt-2 bg-white"   (click)="submitLogin()">
           Login with Facebook
         </button>
-</div>
-      <div>
-        <button class="login-Btn  text-dark"  m-b-2>
-          <img class="social-btn-icon" m-b-2 alt="Sign up with Google" src="https://hrcdn.net/fcore/assets/google-colored-20b8216731.svg"> Login with Google
+
+        <button class="login-Btn ml-5 pl-4 pr-4 pb-2 pt-2 text-secondary bg-white" #loginRef >
+          <img class="social-btn-icon pb-1 "  alt="Sign up with Google" src="https://hrcdn.net/fcore/assets/google-colored-20b8216731.svg"> Login with Google
         </button>
-      </div>
+
     </div>
-    </div>
-
-
-
-
-
+  <div class="card-body text-center d-flex"><hr>
+    <p class="card-text text-dark">or</p><hr></div>
 
   <div class="container">
     <input type="text" placeholder="First Name" name="uname" required>
@@ -38,16 +33,13 @@
 
     <input type="password" placeholder="Enter Password" name="psw" required>
 
-    <button type="submit" class="wilson">Sign Up</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
 
-<!--  <div class="container" style="background-color:#f1f1f1">-->
-<!--    <button type="button" class="cancelbtn">Cancel</button>-->
-<!--    <span class="psw">Forgot <a href="#">password?</a></span>-->
-<!--  </div>-->
+
+  <div class="card-body text-center">
+    <p class="card-text text-dark">By clicking Sign Up, you agree to our <a href="#" >Terms of Use</a> and our <a href="#" >Privacy Policy</a></p></div>
+    <button class="wilson">Sign Up</button>
+  </div>
 </form>
 
-
+</div>
+</div>
