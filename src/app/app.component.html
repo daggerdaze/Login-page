@@ -1,7 +1,7 @@
 <router-outlet></router-outlet>
 <div class="wolf justify-content-center mt-5" style=" text-align:center">
 <div class="wap wally rounded-circle" style=" display: inline-block;">
-  <a routerLink="/homepage"><img class="rounded-circle" src="./assets/3.png" alt="logo"  style="width:200px; height: 200px "></a>
+  <a href="#"><img class="rounded-circle" src="./assets/3.png" alt="logo"  style="width:200px; height: 200px "></a>
 </div>
 </div>
 
@@ -13,8 +13,6 @@
   <div class="col-sm-9 ml-5 pl-5 my-auto">
     <div class="card bg-light">
 
-<form action="https://reqres.in">
-
   <div class="card-body text-center " >
     <div><h4 class="card-text ">SIGN UP</h4></div>
   </div>
@@ -24,7 +22,7 @@
     <div class="card-body text-center">
       <p class="card-text text-dark">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p></div>
       <div class="container mt-2 d-flex justify-content-center card-body text-center " >
-        <button class=" text-secondary fab fa-facebook-square mr-5 pl-4 pr-4 pb-2 pt-2 bg-white default rounded-lg"   (click)="submitLogin()">
+        <button class=" text-secondary mr-5 pl-4 pr-4 pb-2 pt-2 bg-white default rounded-lg"  style="color:cornflowerblue" (click)="submitLogin()"><i class="fa fa-facebook-official" style="color:cornflowerblue"></i>
           Login with Facebook
         </button>
 
@@ -36,7 +34,9 @@
   <div class="card-body text-center d-flex"><hr>
     <p class="card-text text-dark">or</p><hr></div>
 
+      <form>
   <div class="container">
+
     <input type="text" placeholder="First Name" name="uname" required>
 
     <input type="text" placeholder="Last Name" name="namr" required>
@@ -48,10 +48,11 @@
 
 
   <div class="card-body text-center">
-    <p class="card-text text-dark">By clicking Sign Up, you agree to our <a href="https://policies.google.com/terms?hl=en-US" >Terms of Use</a> and our <a href="https://policies.google.com/privacy?hl=en-US" >Privacy Policy</a></p></div>
-    <button class="wilson rounded-lg">Sign Up</button>
+    <p class="card-text text-dark">By clicking Sign Up, you agree to our <a href="https://policies.google.com/terms?hl=en-US" >Terms of Use</a> and our <a href="https://policies.google.com/privacy?hl=en-US" >Privacy Policy</a></p>
   </div>
-</form>
+    <button class="wilson rounded-lg btn-primary">Sign Up</button>
+  </div> </form>
+
 
 </div>
 </div>
