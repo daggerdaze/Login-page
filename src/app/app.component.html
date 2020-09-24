@@ -1,0 +1,53 @@
+
+
+<router-outlet></router-outlet>
+<form  method="post">
+
+  <div class="container mt-5">
+
+
+
+
+
+    <div class="col-lg-6 ">
+
+<div>
+        <button class="login-Btn text-dark fab fa-facebook-square" #loginRef  m-b-2 (click)="submitLogin()">
+          Login with Facebook
+        </button>
+</div>
+      <div>
+        <button class="login-Btn  text-dark"  m-b-2>
+          <img class="social-btn-icon" m-b-2 alt="Sign up with Google" src="https://hrcdn.net/fcore/assets/google-colored-20b8216731.svg"> Login with Google
+        </button>
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+
+  <div class="container">
+    <input type="text" placeholder="First Name" name="uname" required>
+
+    <input type="text" placeholder="Last Name" name="namr" required>
+
+    <input type="email" placeholder="Email" name="email" required>
+
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="wilson">Sign Up</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+<!--  <div class="container" style="background-color:#f1f1f1">-->
+<!--    <button type="button" class="cancelbtn">Cancel</button>-->
+<!--    <span class="psw">Forgot <a href="#">password?</a></span>-->
+<!--  </div>-->
+</form>
+
+
